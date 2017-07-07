@@ -1,0 +1,152 @@
+---
+parser: babel-eslint
+plugins:
+-   react
+-   flowtype
+-   babel
+-   promise
+-   security
+-   jsx-a11y
+extends:
+-   eslint:recommended
+-   plugin:react/recommended
+-   plugin:import/errors
+-   plugin:import/warnings
+-   plugin:jsx-a11y/recommended
+-   plugin:flowtype/recommended
+
+env:
+    browser: true
+    es6: true
+parserOptions:
+    ecmaFeatures:
+        jsx: true
+        modules: true
+    sourceType: module
+
+globals:
+    require: true
+    "$": true
+    module: true
+    describe: true
+    # for unit_test
+    it: true
+    xit: true
+    before: true
+    beforeEach: true
+    after: true
+    afterEach: true
+    FirebasePlugin: true
+    BackgroundGeolocation: true
+    Raven: true
+    FileTransfer: true
+    FileUploadOptions: true
+    device: true
+    Camera: true
+    global: true
+    process: true
+    APP: true
+rules:
+    no-unused-expressions: "off"    # for `hoge && hoge.fuga()`
+    react/require-extension: "off"
+    no-constant-condition: "off"
+    react/jsx-filename-extension: "off"
+    import/no-extraneous-dependencies: "off"
+    no-extra-boolean-cast: "off"
+    import/prefer-default-export: "off"
+    no-param-reassign: "off"
+    no-class-assign: "off"
+    no-cond-assign: "off"
+    react/jsx-no-bind: "off"
+    react/sort-comp: "off"
+    no-console: "off"
+    spaced-comment: "warn"
+    no-new: "off"
+    react/jsx-indent: "off"
+    react/jsx-indent-props: "off"
+    react/jsx-boolean-value: "off"
+    react/prefer-stateless-function: "off"
+    arrow-body-style: "off"
+    object-curly-spacing: [2, "always"]
+    indent:
+    -   "warn"
+    -   4
+    -   SwitchCase: 1
+    prefer-const: "error"
+    react/display-name: "warn"
+    semi: "off"
+    comma-spacing:
+    -   "error"
+    -   before: false
+        after: true
+    comma-style:
+    -   "error"
+    -   last
+    comma-dangle: ["warn", "always-multiline"]
+    computed-property-spacing:
+    -   "error"
+    -   never
+    eol-last: "off"
+    id-blacklist:
+    -   "error"
+    -   abcdefg
+    key-spacing: "warn"
+    keyword-spacing:
+    -   "error"
+    -   before: true
+        after: true
+        overrides: {}
+    linebreak-style: "error"
+    max-depth:
+    -   "error"
+    -   4
+    max-len:
+    -   "warn"
+    -   code: 190
+        tabWidth: 4
+        ignoreUrls: true
+    max-nested-callbacks:
+    -   "error"
+    -   3
+    max-params:
+    -   "warn"
+    -   5
+    no-mixed-spaces-and-tabs:
+    -   "error"
+    -   smart-tabs
+    no-multiple-empty-lines:
+    -   "error"
+    -   max: 3
+        maxEOF: 1
+    no-nested-ternary: "error"
+    no-new-object: "error"
+    no-restricted-syntax:
+    -   "error"
+    -   WithStatement
+    no-spaced-func: "error"
+    no-underscore-dangle:
+    -   "warn"
+    -   allowAfterThis: true
+        allow:
+        -   _orderWorkList
+        -   _extend
+    no-unused-vars:
+    -   "warn"
+    -   vars: all
+        args: none
+    class-methods-use-this: "off"
+    array-bracket-spacing: "warn"
+    object-shorthand: "warn"
+    flowtype/define-flow-type: "warn"
+    flowtype/use-flow-type: "warn"
+    flowtype/object-type-delimiter:
+    -   "warn"
+    -   semicolon
+    babel/generator-star-spacing: "off"
+    babel/new-cap: "off" # for SFC
+    babel/object-curly-spacing: "off"
+    no-await-in-loop: "warn"
+    babel/func-params-comma-dangle: "off"
+    babel/arrow-parens: "off"
+    jsx-a11y/click-events-have-key-events: "off"
+    jsx-a11y/no-static-element-interactions: "off"

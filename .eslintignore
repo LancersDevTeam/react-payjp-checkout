@@ -1,0 +1,5 @@
+**/*{.,-}min.js
+node_modules/*
+browser/*
+decls/*
+node_modules/*

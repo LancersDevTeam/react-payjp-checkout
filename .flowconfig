@@ -1,0 +1,25 @@
+[ignore]
+
+.*/node_modules/fbjs/*
+.*/node_modules/karma-phantomjs-launcher/*
+.*/node_modules/npm/*
+.*/tests/*
+.*/node_modules/react-event-listener/*
+
+[include]
+
+[libs]
+
+decls/
+
+[options]
+module.system=node
+esproposal.class_instance_fields=enable
+esproposal.class_static_fields=enable
+esproposal.decorators=ignore
+esproposal.export_star_as=ignore
+suppress_comment= \\(.\\|\n\\)*\\flow-disable-line
+
+module.name_mapper.extension='css' -> '<PROJECT_ROOT>/flow/CSSModule.js.flow'
+module.name_mapper.extension='png' -> '<PROJECT_ROOT>/flow/WebpackAsset.js.flow'
+module.name_mapper.extension='jpg' -> '<PROJECT_ROOT>/flow/WebpackAsset.js.flow'

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PayjpCheckout renders correctly 1`] = `
+<PayjpCheckout
+  className="payjp-button"
+  dataKey="pk_test_0383a1b8f91e8a6e3ea0e2a9"
+  dataPartial="true"
+  dataText="クレジットカードで支払う"
+  onCreatedHandler={[Function]}
+  onFailedHandler={[Function]}
+>
+  <div />
+</PayjpCheckout>
+`;
